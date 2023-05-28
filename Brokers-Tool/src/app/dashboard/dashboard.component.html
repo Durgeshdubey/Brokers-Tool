@@ -1,1 +1,20 @@
-<p>dashboard works!</p>
+<mat-card class="heading ">
+    <div class="row">
+        <div class="col-md-2 text-center"> <button mat-icon-button  class="example-icon" (click)="drawer.toggle()" aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+          </button></div>
+        <div class="col-md-10" style="padding-left: 19rem;"> <mat-card-content>WELCOME TO BROKERS TOOL</mat-card-content></div>
+    </div>
+</mat-card>
+
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+    <app-delivery-challan></app-delivery-challan>
+    <app-gst-invoice></app-gst-invoice>
+    </mat-drawer>
+  
+    <div class="example-sidenav-content">
+    
+    </div>
+  
+  </mat-drawer-container>
